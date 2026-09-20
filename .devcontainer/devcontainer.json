@@ -1,0 +1,23 @@
+{
+  "name": "assignment-build-a-themed-and-responsive-web-app",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-22-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install",
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+
+}
